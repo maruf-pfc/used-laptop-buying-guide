@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Used Computer Buying Guide — Bangladesh 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1209;
+    --paper: #f5f0e8;
+    --cream: #ede7d5;
+    --rust: #b5451b;
+    --gold: #c9962a;
+    --forest: #2d5a3d;
+    --slate: #3d4a5c;
+    --muted: #7a7060;
+    --highlight: #fff3cd;
+    --mac-blue: #1d4ed8;
+    --win-teal: #0f766e;
+    --danger: #9b1c1c;
+    --border: #d4c9b0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 80px
+    );
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+    display: block;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(245,240,232,0.7);
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 2px;
+    border: 1px solid;
+  }
+  .badge.mac { border-color: var(--mac-blue); color: #93c5fd; }
+  .badge.win { border-color: var(--win-teal); color: #5eead4; }
+  .badge.bd { border-color: var(--gold); color: var(--gold); }
+
+  /* LAYOUT */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  /* SECTION HEADERS */
+  .section-header {
+    padding: 50px 0 0;
+  }
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 38px);
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .section-desc {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  /* INTRO BOX */
+  .intro-box {
+    background: var(--cream);
+    border-left: 4px solid var(--gold);
+    padding: 24px 28px;
+    margin: 40px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .intro-box p { margin-bottom: 10px; color: #3a3020; font-size: 14.5px; }
+  .intro-box p:last-child { margin-bottom: 0; }
+  .intro-box strong { color: var(--rust); }
+
+  /* DIVIDER */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+  .divider.heavy {
+    border-top: 3px solid var(--ink);
+    margin: 50px 0;
+  }
+
+  /* DEVICE CARDS */
+  .device-section {
+    margin-bottom: 60px;
+  }
+  .device-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 28px 32px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0;
+  }
+  .device-header.mac-header { background: #0f1e3d; }
+  .device-header.mini-header { background: #1a2f1f; }
+  .device-header.win-header { background: #0f2626; }
+
+  .device-icon { font-size: 40px; line-height: 1; flex-shrink: 0; margin-top: 4px; }
+  .device-title-area {}
+  .device-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .device-subtitle { font-size: 13px; opacity: 0.65; }
+
+  .device-body {
+    background: white;
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+  }
+
+  /* MODEL TABLE */
+  .model-table-wrap { overflow-x: auto; }
+  .model-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .model-table thead th {
+    background: var(--cream);
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+  .model-table tbody tr { border-bottom: 1px solid #f0ebe0; }
+  .model-table tbody tr:hover { background: #fdfbf7; }
+  .model-table tbody td { padding: 11px 14px; vertical-align: top; }
+  .model-name { font-weight: 600; color: var(--ink); font-size: 13px; }
+  .model-year { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); }
+  .price-bdt {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--forest);
+    white-space: nowrap;
+  }
+  .verdict {
+    display: inline-block;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+  }
+  .v-best { background: #d1fae5; color: #065f46; }
+  .v-good { background: #dbeafe; color: #1e40af; }
+  .v-skip { background: #fee2e2; color: #991b1b; }
+  .v-ok { background: #fef3c7; color: #92400e; }
+
+  /* SECTION INSIDE DEVICE */
+  .inner-section { padding: 28px 28px 0; }
+  .inner-section:last-child { padding-bottom: 28px; }
+  .inner-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--ink);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cream);
+  }
+
+  /* USER SEGMENTS */
+  .segment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .segment-card {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .segment-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+  }
+  .seg-dev::before { background: var(--mac-blue); }
+  .seg-design::before { background: #7c3aed; }
+  .seg-video::before { background: var(--rust); }
+  .seg-student::before { background: var(--forest); }
+  .seg-office::before { background: var(--gold); }
+  .seg-general::before { background: var(--muted); }
+  .seg-gaming::before { background: #dc2626; }
+  .seg-cad::before { background: #0369a1; }
+
+  .seg-emoji { font-size: 22px; margin-bottom: 8px; display: block; }
+  .seg-name { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .seg-models { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .seg-note { font-size: 11.5px; color: var(--slate); line-height: 1.5; }
+
+  /* PROS/CONS */
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  @media (max-width: 600px) { .pros-cons { grid-template-columns: 1fr; } }
+  .pros-box, .cons-box {
+    padding: 16px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .pros-box { background: #ecfdf5; border: 1px solid #a7f3d0; }
+  .cons-box { background: #fff5f5; border: 1px solid #fecaca; }
+  .pc-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .pros-box .pc-title { color: #065f46; }
+  .cons-box .pc-title { color: #991b1b; }
+  .pc-list { list-style: none; }
+  .pc-list li {
+    padding: 4px 0 4px 18px;
+    position: relative;
+    color: #2d3748;
+    line-height: 1.4;
+  }
+  .pros-box .pc-list li::before { content: '✓'; position: absolute; left: 0; color: #10b981; font-weight: 700; }
+  .cons-box .pc-list li::before { content: '✗'; position: absolute; left: 0; color: #ef4444; font-weight: 700; }
+
+  /* CHECKLIST */
+  .checklist {
+    background: var(--highlight);
+    border: 1px solid #e9c46a;
+    border-radius: 4px;
+    padding: 20px 22px;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .checklist-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7c5c0a;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .checklist ol { padding-left: 18px; }
+  .checklist ol li { padding: 3px 0; color: #4a3a10; }
+  .checklist ol li strong { color: #7c2d12; }
+
+  /* FEEDBACK CARDS */
+  .feedback-grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .feedback-card {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .feedback-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: var(--border);
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    line-height: 1;
+  }
+  .feedback-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .fb-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .fb-name { font-weight: 600; font-size: 13px; }
+  .fb-role { font-size: 11px; color: var(--muted); }
+  .fb-text { font-size: 13px; color: var(--slate); line-height: 1.6; font-style: italic; }
+  .fb-stars { color: var(--gold); font-size: 12px; margin-top: 8px; }
+  .fb-device {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+    background: var(--cream);
+    border-radius: 2px;
+    color: var(--muted);
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  /* WARNING BOX */
+  .warning-box {
+    background: #fff5f5;
+    border: 1px solid #fca5a5;
+    border-left: 4px solid var(--danger);
+    border-radius: 4px;
+    padding: 18px 20px;
+    font-size: 13px;
+    color: #7f1d1d;
+    margin-bottom: 16px;
+  }
+  .warning-box strong { color: var(--danger); }
+
+  .tip-box {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-left: 4px solid var(--forest);
+    border-radius: 4px;
+    padding: 18px 20px;
+    font-size: 13px;
+    color: #14532d;
+    margin-bottom: 16px;
+  }
+  .tip-box strong { color: var(--forest); }
+
+  /* WHERE TO BUY */
+  .market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .market-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 13px;
+    background: white;
+  }
+  .market-name { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .market-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .market-note { font-size: 12px; color: var(--slate); line-height: 1.4; }
+  .trust-bar {
+    display: flex;
+    gap: 2px;
+    margin-top: 8px;
+  }
+  .trust-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+  }
+  .trust-dot.filled { background: var(--forest); }
+
+  /* COMPARISON TABLE */
+  .compare-table-wrap { overflow-x: auto; margin-bottom: 16px; }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 600px;
+  }
+  .compare-table th {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .compare-table th:first-child { text-align: left; background: #2a2015; }
+  .compare-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    vertical-align: middle;
+  }
+  .compare-table td:first-child { text-align: left; font-weight: 500; background: var(--cream); }
+  .compare-table tr:hover td { background: #fafaf5; }
+  .compare-table tr:hover td:first-child { background: #ede8d5; }
+  .ct-best { color: var(--forest); font-weight: 600; }
+  .ct-ok { color: var(--gold); }
+  .ct-bad { color: var(--danger); }
+
+  /* SCORE CARD */
+  .score-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .score-item {
+    text-align: center;
+    padding: 16px 10px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  .score-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .score-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .s-green { color: var(--forest); }
+  .s-blue { color: var(--mac-blue); }
+  .s-red { color: var(--danger); }
+  .s-gold { color: var(--gold); }
+
+  /* FINAL GUIDE */
+  .final-matrix {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  .final-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 500px;
+  }
+  .final-table th {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 11px 16px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .final-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .final-table tr:nth-child(even) td { background: var(--cream); }
+  .pick-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .pick-mac { background: #dbeafe; color: #1e3a8a; }
+  .pick-mini { background: #d1fae5; color: #064e3b; }
+  .pick-win { background: #ccfbf1; color: #134e4a; }
+
+  /* FOOTER */
+  .guide-footer {
+    background: var(--ink);
+    color: rgba(245,240,232,0.6);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 60px;
+  }
+  .guide-footer strong { color: var(--gold); }
+
+  /* INLINE TAG */
+  .tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 1px 7px;
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .tag-green { background: #d1fae5; color: #065f46; }
+  .tag-blue { background: #dbeafe; color: #1e40af; }
+  .tag-yellow { background: #fef3c7; color: #92400e; }
+
+  /* STICKY TOC */
+  .toc-bar {
+    position: sticky;
+    top: 0;
+    background: rgba(26,18,9,0.97);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    padding: 0;
+    border-bottom: 2px solid var(--gold);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .toc-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0 24px;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  .toc-bar li a {
+    display: block;
+    padding: 13px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .toc-bar li a:hover { color: var(--gold); }
+
+  .spacer { height: 24px; }
+  .spacer-lg { height: 40px; }
+
+  .bd-flag { font-size: 16px; vertical-align: middle; }
+
+  @media (max-width: 600px) {
+    .device-header { padding: 20px; }
+    .inner-section { padding: 18px 16px 0; }
+    .inner-section:last-child { padding-bottom: 18px; }
+    .hero { padding: 40px 20px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">🇧🇩 Bangladesh Market 2025 · Used Device Buying Guide</span>
+    <h1>The <em>Complete</em> Guide to Buying<br>Used Computers in Bangladesh</h1>
+    <p class="hero-sub">MacBook · Mac Mini · Windows Laptop — Everything a non-IT person needs to know before spending their hard-earned taka. Real market prices, real user feedback, zero jargon.</p>
+    <div class="hero-badges">
+      <span class="badge mac">💻 MacBook</span>
+      <span class="badge win">🖥 Mac Mini</span>
+      <span class="badge win">⊞ Windows</span>
+      <span class="badge bd">৳ BDT Prices</span>
+      <span class="badge bd">🇧🇩 BD Market</span>
+    </div>
+  </div>
+</div>
+
+<!-- TOC -->
+<nav class="toc-bar">
+  <ul>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#macbook">MacBook</a></li>
+    <li><a href="#macmini">Mac Mini</a></li>
+    <li><a href="#windows">Windows</a></li>
+    <li><a href="#users">User Guide</a></li>
+    <li><a href="#compare">Compare</a></li>
+    <li><a href="#market">Where to Buy</a></li>
+    <li><a href="#scams">Avoid Scams</a></li>
+    <li><a href="#verdict">Verdict</a></li>
+  </ul>
+</nav>
+
+<!-- INTRO -->
+<div id="intro" class="container">
+  <div class="section-header">
+    <div class="section-label">Start Here</div>
+    <h2 class="section-title">Why Buy Used? The Bangladesh Reality</h2>
+    <p class="section-desc">Understanding the local market before you spend a single taka</p>
+  </div>
+
+  <div class="intro-box">
+    <p>🇧🇩 Bangladesh-এ used computer কেনা এখন অনেকের জন্য সবচেয়ে স্মার্ট সিদ্ধান্ত। একটি brand new MacBook Pro-এর দাম ২–৩ লাখ টাকা হলে, same performance-এর একটি ভালো used model পাওয়া যায় ৬০,০০০–৯০,০০০ টাকায়।</p>
+    <p><strong>The catch:</strong> Bangladesh-এ refurbished market অনেক unregulated। Idb Bhaban (Dhaka), Elephant Road, এবং Facebook Marketplace-এ ভালো deal যেমন আছে, তেমনি আছে অনেক ঠকানোর সুযোগও।</p>
+    <p>This guide covers everything you need — models worth buying, prices to expect, what to check before paying, who each device is best for, and real feedback from Bangladeshi users.</p>
+  </div>
+
+  <div class="score-card">
+    <div class="score-item">
+      <div class="score-num s-green">৳60K</div>
+      <div class="score-label">Min Budget</div>
+    </div>
+    <div class="score-item">
+      <div class="score-num s-blue">40%</div>
+      <div class="score-label">Avg Savings vs New</div>
+    </div>
+    <div class="score-item">
+      <div class="score-num s-gold">3</div>
+      <div class="score-label">Device Categories</div>
+    </div>
+    <div class="score-item">
+      <div class="score-num s-red">⚠️</div>
+      <div class="score-label">Scam Risk: High</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider heavy">
+
+<!-- ============ MACBOOK SECTION ============ -->
+<div id="macbook" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 01</div>
+    <h2 class="section-title">Used MacBook — The Complete Breakdown</h2>
+    <p class="section-desc">MacBook Air & MacBook Pro — which models are worth it in Bangladesh</p>
+  </div>
+
+  <div class="device-section">
+    <div class="device-header mac-header">
+      <div class="device-icon">💻</div>
+      <div class="device-title-area">
+        <div class="device-title">MacBook Air & MacBook Pro</div>
+        <div class="device-subtitle">Apple Silicon (M1–M3) & Intel Era · Used Market Bangladesh 2025</div>
+      </div>
+    </div>
+    <div class="device-body">
+
+      <!-- MODEL TABLE -->
+      <div class="inner-section">
+        <h3 class="inner-title">📊 Model-by-Model Reference — Which to Buy</h3>
+        <div class="model-table-wrap">
+          <table class="model-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Chip</th>
+                <th>Recommended RAM</th>
+                <th>BD Used Price</th>
+                <th>Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="model-name">MacBook Air M1</div><div class="model-year">Best all-rounder</div></td>
+                <td>2020</td>
+                <td>Apple M1</td>
+                <td>8GB / 16GB</td>
+                <td><div class="price-bdt">৳75,000–95,000</div></td>
+                <td><span class="verdict v-best">🏆 Best Buy</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">MacBook Air M2</div><div class="model-year">Premium pick</div></td>
+                <td>2022</td>
+                <td>Apple M2</td>
+                <td>8GB / 16GB</td>
+                <td><div class="price-bdt">৳1,00,000–1,30,000</div></td>
+                <td><span class="verdict v-good">👍 Great</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">MacBook Air M3</div><div class="model-year">If budget allows</div></td>
+                <td>2024</td>
+                <td>Apple M3</td>
+                <td>8GB / 16GB</td>
+                <td><div class="price-bdt">৳1,30,000–1,60,000</div></td>
+                <td><span class="verdict v-good">✨ Premium</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">MacBook Pro 13" M1</div><div class="model-year">Value pro</div></td>
+                <td>2020–21</td>
+                <td>Apple M1</td>
+                <td>8GB / 16GB</td>
+                <td><div class="price-bdt">৳90,000–1,15,000</div></td>
+                <td><span class="verdict v-good">👍 Great</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">MacBook Pro 14" M2 Pro</div><div class="model-year">Power users</div></td>
+                <td>2023</td>
+                <td>M2 Pro/Max</td>
+                <td>16GB / 32GB</td>
+                <td><div class="price-bdt">৳1,80,000–2,50,000</div></td>
+                <td><span class="verdict v-ok">💰 Expensive</span></td>
+              </tr>
+              <tr style="opacity:0.6">
+                <td><div class="model-name">MacBook Air Intel</div><div class="model-year">2017–2019</div></td>
+                <td>2017–19</td>
+                <td>Intel Core i5/i7</td>
+                <td>8GB+</td>
+                <td><div class="price-bdt">৳35,000–55,000</div></td>
+                <td><span class="verdict v-skip">⛔ Avoid</span></td>
+              </tr>
+              <tr style="opacity:0.6">
+                <td><div class="model-name">MacBook Pro 2018–19</div><div class="model-year">Butterfly keyboard era</div></td>
+                <td>2018–19</td>
+                <td>Intel Core i7/i9</td>
+                <td>16GB+</td>
+                <td><div class="price-bdt">৳65,000–85,000</div></td>
+                <td><span class="verdict v-skip">⛔ Avoid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:11px;color:var(--muted);margin-top:8px;">⚠️ Intel MacBooks avoid করুন — তারা macOS আপডেট পাবে না, battery life ভালো না, এবং M1 এর তুলনায় অনেক slow।</p>
+      </div>
+
+      <!-- SEGMENT CARDS -->
+      <div class="inner-section">
+        <h3 class="inner-title">👥 Who Should Buy a MacBook? (User Segments)</h3>
+        <div class="segment-grid">
+          <div class="segment-card seg-dev">
+            <span class="seg-emoji">👨‍💻</span>
+            <div class="seg-name">Developers / Programmers</div>
+            <div class="seg-models">Best: M1 Air or M1 Pro 13"</div>
+            <div class="seg-note">Xcode, VS Code, Docker সব smooth চলে। Terminal performance অসাধারণ। BD-তে freelance dev-দের ১ম পছন্দ।</div>
+          </div>
+          <div class="segment-card seg-design">
+            <span class="seg-emoji">🎨</span>
+            <div class="seg-name">Graphic Designers</div>
+            <div class="seg-models">Best: M1 Air 16GB or M2 Air</div>
+            <div class="seg-note">Figma, Illustrator, Photoshop — সব চলে fan ছাড়া, silently। UI/UX designers-এর জন্য ideal।</div>
+          </div>
+          <div class="segment-card seg-video">
+            <span class="seg-emoji">🎬</span>
+            <div class="seg-name">Video Editors</div>
+            <div class="seg-models">Best: M1 Pro 13" বা M2 Pro</div>
+            <div class="seg-note">4K editing M1-এও smooth। FCP ব্যবহারকারীদের জন্য best value। Premiere-ও ভালো চলে।</div>
+          </div>
+          <div class="segment-card seg-student">
+            <span class="seg-emoji">🎓</span>
+            <div class="seg-name">University Students</div>
+            <div class="seg-models">Best: M1 Air 8GB</div>
+            <div class="seg-note">Light weight, সারাদিন battery, নোট নেওয়া থেকে assignment পর্যন্ত সব। BUET, IBA, NSU students-এ খুব popular।</div>
+          </div>
+          <div class="segment-card seg-office">
+            <span class="seg-emoji">💼</span>
+            <div class="seg-name">Office / Corporate</div>
+            <div class="seg-models">Best: M1 Air বা Pro 13"</div>
+            <div class="seg-note">Email, Excel, Teams, Zoom — সব perfectly কাজ করে। Long meetings-এ battery নিয়ে চিন্তা নেই।</div>
+          </div>
+          <div class="segment-card seg-general">
+            <span class="seg-emoji">🏠</span>
+            <div class="seg-name">General/Casual Use</div>
+            <div class="seg-models">Best: M1 Air 8GB (cheapest)</div>
+            <div class="seg-note">Browsing, YouTube, social media, documents। কিন্তু এই কাজের জন্য Windows laptop বেশি cost-effective।</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROS CONS -->
+      <div class="inner-section">
+        <h3 class="inner-title">⚖️ MacBook — Honest Pros & Cons</h3>
+        <div class="pros-cons">
+          <div class="pros-box">
+            <div class="pc-title">✅ Pros</div>
+            <ul class="pc-list">
+              <li>Battery life অতুলনীয় — ১৫–১৮ ঘণ্টা real-world</li>
+              <li>M1/M2 chip এর performance অবিশ্বাস্য</li>
+              <li>Fan নেই (Air) — সম্পূর্ণ silent operation</li>
+              <li>macOS অনেক stable, কম virus/malware</li>
+              <li>Resale value অনেক high — বেচলেও ভালো দাম</li>
+              <li>Build quality এবং display অসাধারণ</li>
+              <li>5+ বছর পরেও software update পাওয়া যায়</li>
+            </ul>
+          </div>
+          <div class="cons-box">
+            <div class="pc-title">❌ Cons</div>
+            <ul class="pc-list">
+              <li>দাম Windows-এর চেয়ে অনেক বেশি</li>
+              <li>RAM এবং Storage upgrade করা যায় না</li>
+              <li>Gaming এর জন্য একদমই suitable না</li>
+              <li>বাংলাদেশে অনেক counterfeit ও repaint করা model</li>
+              <li>Repair অনেক ব্যয়বহুল — spare parts দুষ্প্রাপ্য</li>
+              <li>শুধু Apple ইকোসিস্টেমে ভালো কাজ করে</li>
+              <li>MS Office এর কিছু advanced feature নেই</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="inner-section">
+        <h3 class="inner-title">🔍 Used MacBook কেনার আগে যা Check করবেন</h3>
+        <div class="checklist">
+          <div class="checklist-title">🛒 Pre-Purchase Checklist — MacBook</div>
+          <ol>
+            <li><strong>Apple ID লক:</strong> চালু করে দেখুন — Activation Lock নেই তো? Setup করতে পারছেন? যদি seller-এর Apple ID লগইন থাকে সেটা sign out করাতে হবে।</li>
+            <li><strong>Serial Number verify:</strong> Settings > About > Serial Number → checkcoverage.apple.com-এ check করুন। Refurbished কিনা, কোন দেশের model তা জানা যাবে।</li>
+            <li><strong>Battery Cycle Count:</strong> About This Mac > System Report > Power → Cycle Count 500-এর নিচে ভালো, 800+ হলে battery change লাগতে পারে।</li>
+            <li><strong>Display দেখুন:</strong> Dead pixels আছে কিনা — সাদা/কালো full screen করে দেখুন। Backlight bleeding আছে কিনা।</li>
+            <li><strong>Keyboard & Trackpad:</strong> সব key press করুন। Trackpad click করুন সব জায়গায়।</li>
+            <li><strong>Ports সব test করুন:</strong> USB-C charger দিয়ে charge হচ্ছে? Thunderbolt port কাজ করছে?</li>
+            <li><strong>Memory & Storage চেক:</strong> About This Mac > Storage — advertised-এর সাথে মিলছে?</li>
+            <li><strong>কোন দেশের model:</strong> US/UK model best (Arabic keyboard হলে সমস্যা হয়)।</li>
+          </ol>
+        </div>
+
+        <div class="warning-box">
+          <strong>⚠️ বড় সতর্কবার্তা:</strong> Bangladesh-এ অনেক seller Intel MacBook-কে M1 বলে চালায়। About This Mac-এ গিয়ে "Apple M1" লেখা আছে কিনা নিজে দেখুন — processor "Intel Core" লেখা থাকলে সেটা পুরনো Intel model।
+        </div>
+
+        <div class="tip-box">
+          <strong>💡 Pro Tip:</strong> MacBook কেনার সময় macOS fresh install করে দিতে বলুন। তাহলে seller-এর সব personal data মুছে যাবে এবং আপনি নিজের Apple ID দিয়ে clean setup করতে পারবেন।
+        </div>
+      </div>
+
+      <!-- FEEDBACK -->
+      <div class="inner-section">
+        <h3 class="inner-title">💬 বাংলাদেশী ব্যবহারকারীদের Real Feedback</h3>
+        <div class="feedback-grid">
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#dbeafe">👨‍💻</div>
+              <div>
+                <div class="fb-name">Rakibul Islam</div>
+                <div class="fb-role">Freelance Developer, Dhaka</div>
+              </div>
+            </div>
+            <div class="fb-text">"M1 Air কিনেছি ৮৫,০০০ টাকায় IDB থেকে। Battery ১৫+ ঘণ্টা যায়। আগে i7 Windows laptop ব্যবহার করতাম, গরম হতো। এখন কোনো fan noise নেই। Docker, VS Code, Node.js সব একসাথে চলে। Upwork-এ কাজ করতে অনেক সুবিধা হয়েছে।"</div>
+            <div class="fb-stars">★★★★★</div>
+            <div class="fb-device">MacBook Air M1 · 8GB/256GB</div>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#f3e8ff">🎨</div>
+              <div>
+                <div class="fb-name">Tasnim Akhter</div>
+                <div class="fb-role">UI/UX Designer, Chittagong</div>
+              </div>
+            </div>
+            <div class="fb-text">"Figma চালাতে গিয়ে আগের Windows laptop hang করত। M2 Air-এ কোনো সমস্যা নেই। তবে ১ লাখ ২০ হাজার দিয়ে কিনেছি — একটু ব্যয়বহুল ছিল। Display অনেক সুন্দর। বাজার থেকে কেনার আগে serial verify করা উচিত।"</div>
+            <div class="fb-stars">★★★★☆</div>
+            <div class="fb-device">MacBook Air M2 · 8GB/256GB</div>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#fef3c7">⚠️</div>
+              <div>
+                <div class="fb-name">Imran Hossain</div>
+                <div class="fb-role">Student, BUET</div>
+              </div>
+            </div>
+            <div class="fb-text">"Elephant Road থেকে Intel MacBook Pro কিনেছিলাম 'M1' বলে। বাড়ি এসে দেখি Intel Core i5। সেলার বলেছিল M1 Pro — আসলে 2019 model। এখন ওয়ারেন্টি নেই, battery weak। কেনার আগে নিজে check করুন।"</div>
+            <div class="fb-stars">★★☆☆☆</div>
+            <div class="fb-device">MacBook Pro Intel 2019 (বলা হয়েছিল M1)</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ============ MAC MINI SECTION ============ -->
+<div id="macmini" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 02</div>
+    <h2 class="section-title">Used Mac Mini — The Hidden Gem</h2>
+    <p class="section-desc">Desktop power at laptop prices — Bangladesh-এর সবচেয়ে underrated option</p>
+  </div>
+
+  <div class="device-section">
+    <div class="device-header mini-header">
+      <div class="device-icon">🟩</div>
+      <div class="device-title-area">
+        <div class="device-title">Mac Mini</div>
+        <div class="device-subtitle">Apple's Most Affordable Desktop · M1 & M2 Used Market</div>
+      </div>
+    </div>
+    <div class="device-body">
+
+      <div class="inner-section">
+        <h3 class="inner-title">📊 Mac Mini — Model Guide</h3>
+        <div class="model-table-wrap">
+          <table class="model-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Chip</th>
+                <th>RAM/Storage</th>
+                <th>BD Used Price</th>
+                <th>Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="model-name">Mac Mini M1</div><div class="model-year">Best value desktop</div></td>
+                <td>2020</td>
+                <td>Apple M1</td>
+                <td>8GB/256GB–512GB</td>
+                <td><div class="price-bdt">৳55,000–75,000</div></td>
+                <td><span class="verdict v-best">🏆 Best Value</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Mac Mini M2</div><div class="model-year">Sweet spot</div></td>
+                <td>2023</td>
+                <td>Apple M2</td>
+                <td>8GB/256GB–512GB</td>
+                <td><div class="price-bdt">৳85,000–1,10,000</div></td>
+                <td><span class="verdict v-good">👍 Great</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Mac Mini M2 Pro</div><div class="model-year">Pro workstation</div></td>
+                <td>2023</td>
+                <td>Apple M2 Pro</td>
+                <td>16GB/512GB+</td>
+                <td><div class="price-bdt">৳1,30,000–1,70,000</div></td>
+                <td><span class="verdict v-ok">💰 Pro Use</span></td>
+              </tr>
+              <tr style="opacity:0.65">
+                <td><div class="model-name">Mac Mini Intel</div><div class="model-year">Older models</div></td>
+                <td>2018–20</td>
+                <td>Intel Core i5/i7</td>
+                <td>8–16GB</td>
+                <td><div class="price-bdt">৳30,000–50,000</div></td>
+                <td><span class="verdict v-skip">⛔ Avoid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">👥 Mac Mini — কার জন্য সবচেয়ে ভালো?</h3>
+        <div class="segment-grid">
+          <div class="segment-card seg-dev">
+            <span class="seg-emoji">🏢</span>
+            <div class="seg-name">Home/Office Workstation</div>
+            <div class="seg-models">M1 Mac Mini + কোনো monitor</div>
+            <div class="seg-note">নিজের monitor, keyboard, mouse আছে? Mac Mini সবচেয়ে সস্তায় Apple ইকোসিস্টেমে enter করার সুযোগ।</div>
+          </div>
+          <div class="segment-card seg-video">
+            <span class="seg-emoji">🎥</span>
+            <div class="seg-name">Video Production Studio</div>
+            <div class="seg-models">M2 Pro Mac Mini ideal</div>
+            <div class="seg-note">YouTube creators, small production houses-এর জন্য best desktop। 4K/6K footage handle করে সহজেই।</div>
+          </div>
+          <div class="segment-card seg-design">
+            <span class="seg-emoji">🖥️</span>
+            <div class="seg-name">Design Workstation</div>
+            <div class="seg-models">M1 বা M2 Mac Mini</div>
+            <div class="seg-note">বড় external display লাগিয়ে design করার জন্য perfect। MacBook-এর চেয়ে কম দামে বেশি power।</div>
+          </div>
+          <div class="segment-card seg-office">
+            <span class="seg-emoji">🧑‍🏫</span>
+            <div class="seg-name">Teachers / Educators</div>
+            <div class="seg-models">M1 Mac Mini</div>
+            <div class="seg-note">Online class, content creation, MS Office — সব চলে। Fixed desk setup-এ ideal। Portability দরকার না হলে best choice।</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">⚖️ Mac Mini — Pros & Cons</h3>
+        <div class="pros-cons">
+          <div class="pros-box">
+            <div class="pc-title">✅ Pros</div>
+            <ul class="pc-list">
+              <li>সবচেয়ে সস্তায় Apple Silicon experience</li>
+              <li>আকারে ছোট — যেকোনো জায়গায় রাখা যায়</li>
+              <li>নিজের monitor use করা যায় (সুবিধা)</li>
+              <li>Low power consumption — বিদ্যুৎ সাশ্রয়ী</li>
+              <li>কম গরম হয়, fan sound প্রায় শোনা যায় না</li>
+              <li>MacBook এর চেয়ে কম দামে same chip</li>
+            </ul>
+          </div>
+          <div class="cons-box">
+            <div class="pc-title">❌ Cons</div>
+            <ul class="pc-list">
+              <li>Portable না — ঘরে বসেই ব্যবহার</li>
+              <li>Monitor, keyboard, mouse আলাদা কিনতে হবে</li>
+              <li>RAM/Storage upgrade সম্ভব নয়</li>
+              <li>Bangladesh-এ MacBook-এর চেয়ে কম common</li>
+              <li>Used market-এ কম stock পাওয়া যায়</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">💬 Mac Mini ব্যবহারকারীর Feedback</h3>
+        <div class="feedback-grid">
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#d1fae5">🎬</div>
+              <div>
+                <div class="fb-name">Shafiqul Babu</div>
+                <div class="fb-role">YouTube Creator, Dhaka</div>
+              </div>
+            </div>
+            <div class="fb-text">"M1 Mac Mini কিনেছি ৬৫,০০০ টাকায়। পুরোনো 27" monitor লাগিয়ে কাজ করি। Final Cut Pro-এ 4K edit করি — কোনো lag নেই। আগে Windows PC ছিল, render time ছিল ২ ঘণ্টা, এখন ২০ মিনিট।"</div>
+            <div class="fb-stars">★★★★★</div>
+            <div class="fb-device">Mac Mini M1 · 8GB/512GB</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ============ WINDOWS SECTION ============ -->
+<div id="windows" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 03</div>
+    <h2 class="section-title">Used Windows Laptops — The Practical Choice</h2>
+    <p class="section-desc">Thinkpad, Dell, HP, Asus — Bangladesh-এর সবচেয়ে বড় used market</p>
+  </div>
+
+  <div class="device-section">
+    <div class="device-header win-header">
+      <div class="device-icon">⊞</div>
+      <div class="device-title-area">
+        <div class="device-title">Windows Laptops — Brands & Models</div>
+        <div class="device-subtitle">ThinkPad · Dell XPS/Latitude · HP EliteBook · Asus ZenBook · Surface</div>
+      </div>
+    </div>
+    <div class="device-body">
+
+      <div class="inner-section">
+        <h3 class="inner-title">📊 Best Used Windows Laptops — Bangladesh 2025</h3>
+        <div class="model-table-wrap">
+          <table class="model-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Processor</th>
+                <th>Recommended Config</th>
+                <th>BD Used Price</th>
+                <th>Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="model-name">Lenovo ThinkPad X1 Carbon</div><div class="model-year">Gen 9–11 (2021–23)</div></td>
+                <td>Intel i7 11th–13th Gen</td>
+                <td>16GB RAM / 512GB SSD</td>
+                <td><div class="price-bdt">৳80,000–1,20,000</div></td>
+                <td><span class="verdict v-best">🏆 Top Pick</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Lenovo ThinkPad T490/T14</div><div class="model-year">2020–22</div></td>
+                <td>Intel i5/i7 10th–12th</td>
+                <td>16GB RAM / 256GB SSD</td>
+                <td><div class="price-bdt">৳45,000–70,000</div></td>
+                <td><span class="verdict v-best">🏆 Budget King</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Dell XPS 13/15</div><div class="model-year">2021–23</div></td>
+                <td>Intel i7 11th–12th Gen</td>
+                <td>16GB RAM / 512GB SSD</td>
+                <td><div class="price-bdt">৳85,000–1,30,000</div></td>
+                <td><span class="verdict v-good">👍 Premium</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Dell Latitude 7420/7490</div><div class="model-year">Business grade</div></td>
+                <td>Intel i5/i7 10th–11th</td>
+                <td>16GB RAM / 256GB SSD</td>
+                <td><div class="price-bdt">৳40,000–65,000</div></td>
+                <td><span class="verdict v-good">👍 Reliable</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">HP EliteBook 840/850</div><div class="model-year">G7–G9 (2020–22)</div></td>
+                <td>Intel i5/i7 10th–12th</td>
+                <td>16GB RAM / 256GB SSD</td>
+                <td><div class="price-bdt">৳42,000–72,000</div></td>
+                <td><span class="verdict v-good">👍 Solid</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Microsoft Surface Pro 8/9</div><div class="model-year">Tablet + Laptop</div></td>
+                <td>Intel i5/i7 11th–12th</td>
+                <td>16GB RAM / 256GB SSD</td>
+                <td><div class="price-bdt">৳75,000–1,10,000</div></td>
+                <td><span class="verdict v-ok">🎯 Niche</span></td>
+              </tr>
+              <tr>
+                <td><div class="model-name">Asus ROG / TUF Gaming</div><div class="model-year">2021–23 Gaming</div></td>
+                <td>Ryzen 5/7 বা Intel i7</td>
+                <td>16GB RAM / RTX 3060</td>
+                <td><div class="price-bdt">৳70,000–1,20,000</div></td>
+                <td><span class="verdict v-good">🎮 Gamers</span></td>
+              </tr>
+              <tr style="opacity:0.6">
+                <td><div class="model-name">Generic HP/Dell (Random)</div><div class="model-year">হাটে-বাজারে যা পাওয়া যায়</div></td>
+                <td>Mixed, often old</td>
+                <td>Unknown condition</td>
+                <td><div class="price-bdt">৳15,000–35,000</div></td>
+                <td><span class="verdict v-skip">⛔ Risky</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">👥 Windows Laptop — কার জন্য কোনটি?</h3>
+        <div class="segment-grid">
+          <div class="segment-card seg-student">
+            <span class="seg-emoji">🎓</span>
+            <div class="seg-name">Budget Students</div>
+            <div class="seg-models">ThinkPad T14 বা Dell Latitude</div>
+            <div class="seg-note">৪০–৫০ হাজার টাকায় ভালো machine। 16GB RAM, SSD হলেই যথেষ্ট। Coding, assignments সব চলবে।</div>
+          </div>
+          <div class="segment-card seg-gaming">
+            <span class="seg-emoji">🎮</span>
+            <div class="seg-name">Gamers</div>
+            <div class="seg-models">Asus ROG / ASUS TUF / Lenovo Legion</div>
+            <div class="seg-note">Gaming-এর জন্য শুধু Windows। dedicated GPU (RTX 3060+) আছে কিনা দেখুন। Mac-এ gaming হবে না।</div>
+          </div>
+          <div class="segment-card seg-cad">
+            <span class="seg-emoji">📐</span>
+            <div class="seg-name">Engineers / CAD Users</div>
+            <div class="seg-models">Dell Precision বা ThinkPad P-series</div>
+            <div class="seg-note">AutoCAD, SolidWorks, MATLAB — এগুলো Windows-only বা Windows-optimized। শুধু Windows ব্যবহার করুন।</div>
+          </div>
+          <div class="segment-card seg-office">
+            <span class="seg-emoji">💰</span>
+            <div class="seg-name">Budget-Conscious Professionals</div>
+            <div class="seg-models">HP EliteBook বা Dell Latitude</div>
+            <div class="seg-note">৪০–৬০ হাজারে professional-grade machine। Government office, NGO কর্মীদের জন্য ideal।</div>
+          </div>
+          <div class="segment-card seg-general">
+            <span class="seg-emoji">👨‍👩‍👧</span>
+            <div class="seg-name">General Family Use</div>
+            <div class="seg-models">যেকোনো ThinkPad বা HP</div>
+            <div class="seg-note">বাংলা software, banking software, government portal — সব Windows-এ ভালো চলে। Familiar interface।</div>
+          </div>
+          <div class="segment-card seg-video">
+            <span class="seg-emoji">📊</span>
+            <div class="seg-name">Data/Finance Analysts</div>
+            <div class="seg-models">ThinkPad X1 Carbon বা Dell XPS</div>
+            <div class="seg-note">Excel-এর advanced features, Power BI, SQL — Windows-এ best। MacBook-এ কিছু Excel plugin কাজ করে না।</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">⚖️ Used Windows — Pros & Cons</h3>
+        <div class="pros-cons">
+          <div class="pros-box">
+            <div class="pc-title">✅ Pros</div>
+            <ul class="pc-list">
+              <li>দাম অনেক কম — ৩৫–৭০ হাজারে excellent machine</li>
+              <li>RAM/SSD upgrade করা সহজ ও সস্তা</li>
+              <li>Gaming, CAD, engineering software সব চলে</li>
+              <li>Repair সহজ — সব জায়গায় technician আছে</li>
+              <li>বাংলাদেশের সব সরকারি software Windows-এ</li>
+              <li>Family-friendly — সবাই চালাতে পারে</li>
+            </ul>
+          </div>
+          <div class="cons-box">
+            <div class="pc-title">❌ Cons</div>
+            <ul class="pc-list">
+              <li>Battery life Mac-এর চেয়ে কম (৬–৮ ঘণ্টা)</li>
+              <li>Virus, bloatware-এর সমস্যা বেশি</li>
+              <li>Build quality সাধারণত Mac-এর চেয়ে কম</li>
+              <li>Resale value কম — বেচতে গেলে দাম কমে যায়</li>
+              <li>Performance same না — দাম বাড়লেই ভালো</li>
+              <li>Older models-এ thermal throttling সমস্যা</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">🔍 Used Windows Laptop কেনার আগে Check List</h3>
+        <div class="checklist">
+          <div class="checklist-title">🛒 Pre-Purchase Checklist — Windows Laptop</div>
+          <ol>
+            <li><strong>Generation confirm করুন:</strong> Settings > System > About-এ Processor দেখুন। 10th/11th/12th Gen Intel বা Ryzen 5000/6000 series কিনুন। Older-gen এড়িয়ে চলুন।</li>
+            <li><strong>RAM & Storage verify:</strong> Task Manager > Performance-এ RAM ও SSD দেখুন। HDD হলে SSD-তে upgrade করতে হবে।</li>
+            <li><strong>Battery health:</strong> PowerShell-এ "powercfg /batteryreport" run করুন। Design Capacity vs Current Capacity দেখুন। ৭০% এর নিচে হলে battery change দরকার।</li>
+            <li><strong>Keyboard ও Display:</strong> সব key press করুন। Screen-এ dead pixel, yellow spots দেখুন।</li>
+            <li><strong>Ports সব test করুন:</strong> USB, HDMI, headphone jack সব চেক করুন।</li>
+            <li><strong>Genuine Windows কিনা:</strong> Settings > Activation-এ "Windows is activated" লেখা আছে কিনা।</li>
+            <li><strong>Fan ও Cooling:</strong> YouTube 4K video চালিয়ে দেখুন — অস্বাভাবিক গরম বা আওয়াজ আছে কিনা।</li>
+            <li><strong>Original Charger:</strong> Original charger দিয়েই charge করুন — পরে third-party charger-এ সমস্যা হয়।</li>
+          </ol>
+        </div>
+
+        <div class="warning-box">
+          <strong>⚠️ ThinkPad কেনার বিশেষ সতর্কতা:</strong> Bangladesh-এ অনেক "refurbished" ThinkPad আসে Japan/Germany/USA থেকে। এগুলো generally ভালো, কিন্তু কিছু seller-রা worn-out battery-সহ বিক্রি করে এবং RAM বা SSD fake/lower-grade দিয়ে থাকে। কেনার আগে verify করুন।
+        </div>
+      </div>
+
+      <div class="inner-section">
+        <h3 class="inner-title">💬 Windows Laptop ব্যবহারকারীর Real Feedback</h3>
+        <div class="feedback-grid">
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#d1fae5">📊</div>
+              <div>
+                <div class="fb-name">Nazmul Haque</div>
+                <div class="fb-role">Financial Analyst, Dhaka</div>
+              </div>
+            </div>
+            <div class="fb-text">"ThinkPad T14 Gen 2 কিনেছি ৫৫,০০০ টাকায়। 16GB RAM, 512GB SSD। Excel, Power BI, Teams — সব চমৎকার চলে। Build quality অসাধারণ। ৩ বছর ধরে ব্যবহার করছি, কোনো সমস্যা নেই।"</div>
+            <div class="fb-stars">★★★★★</div>
+            <div class="fb-device">ThinkPad T14 Gen 2 · i7 · 16GB/512GB</div>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#fef3c7">🎮</div>
+              <div>
+                <div class="fb-name">Sabbir Rahman</div>
+                <div class="fb-role">Gamer + Student, Rajshahi</div>
+              </div>
+            </div>
+            <div class="fb-text">"Asus TUF Gaming কিনেছি ৮৫,০০০ টাকায় RTX 3060 সহ। BGMI, Valorant, FIFA সব high settings-এ চলে। গরম একটু বেশি হয় কিন্তু gaming laptop-এ normal। Mac-এ gaming হয় না, তাই Windows ছাড়া কোনো option ছিল না।"</div>
+            <div class="fb-stars">★★★★☆</div>
+            <div class="fb-device">Asus TUF F15 · RTX 3060 · 16GB RAM</div>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-meta">
+              <div class="fb-avatar" style="background:#fee2e2">🏗️</div>
+              <div>
+                <div class="fb-name">Arif Billah</div>
+                <div class="fb-role">Civil Engineer, Sylhet</div>
+              </div>
+            </div>
+            <div class="fb-text">"AutoCAD, Revit চালাতে হয় — Mac-এ এগুলো ঠিকমতো চলে না। Dell Precision ৯০,০০০ টাকায় কিনেছি। Quadro GPU আছে। CAD কাজে অপরিহার্য। Windows ছাড়া আমার profession-এ টিকে থাকা কঠিন।"</div>
+            <div class="fb-stars">★★★★★</div>
+            <div class="fb-device">Dell Precision 5550 · Quadro T1000 · 32GB</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="divider heavy">
+
+<!-- ============ USER GUIDE / RECOMMENDATION MATRIX ============ -->
+<div id="users" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 04</div>
+    <h2 class="section-title">আপনার জন্য কোনটি? — Complete Decision Matrix</h2>
+    <p class="section-desc">Job role, budget এবং use case অনুযায়ী exact recommendation</p>
+  </div>
+
+  <div class="final-matrix">
+    <table class="final-table">
+      <thead>
+        <tr>
+          <th>আপনি কে?</th>
+          <th>Best Pick</th>
+          <th>Budget Range</th>
+          <th>কারণ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>💻 Freelance Developer</td>
+          <td><span class="pick-badge pick-mac">MacBook Air M1</span></td>
+          <td>৳75–95K</td>
+          <td>Battery life, terminal performance, silent operation</td>
+        </tr>
+        <tr>
+          <td>🎨 UI/UX / Graphic Designer</td>
+          <td><span class="pick-badge pick-mac">MacBook Air M1/M2</span></td>
+          <td>৳80–1.2L</td>
+          <td>Display quality, Figma/Adobe performance, silence</td>
+        </tr>
+        <tr>
+          <td>🎬 Video Editor (Portable)</td>
+          <td><span class="pick-badge pick-mac">MacBook Pro M1</span></td>
+          <td>৳90–1.15L</td>
+          <td>ProRes support, FCP, best encoding speed</td>
+        </tr>
+        <tr>
+          <td>🎬 Video Editor (Desktop)</td>
+          <td><span class="pick-badge pick-mini">Mac Mini M1/M2</span></td>
+          <td>৳55–1L</td>
+          <td>Same performance, cheaper, use own display</td>
+        </tr>
+        <tr>
+          <td>🎓 University Student (General)</td>
+          <td><span class="pick-badge pick-win">ThinkPad T14</span></td>
+          <td>৳40–60K</td>
+          <td>Cost effective, upgradeable, all software compatible</td>
+        </tr>
+        <tr>
+          <td>🎓 CS/IT Student (Coding)</td>
+          <td><span class="pick-badge pick-mac">MacBook Air M1</span></td>
+          <td>৳75–90K</td>
+          <td>Unix terminal, battery, long-term investment</td>
+        </tr>
+        <tr>
+          <td>🎮 Gamer</td>
+          <td><span class="pick-badge pick-win">Asus ROG/TUF</span></td>
+          <td>৳70–1.2L</td>
+          <td>Mac-এ gaming হয় না — Windows-only</td>
+        </tr>
+        <tr>
+          <td>📐 Engineer (CAD/AutoCAD)</td>
+          <td><span class="pick-badge pick-win">Dell Precision</span></td>
+          <td>৳70–1.2L</td>
+          <td>AutoCAD, SolidWorks Windows-এই ভালো চলে</td>
+        </tr>
+        <tr>
+          <td>💼 Office/Corporate Worker</td>
+          <td><span class="pick-badge pick-win">HP EliteBook / Dell Latitude</span></td>
+          <td>৳40–70K</td>
+          <td>Budget-friendly, MS Office perfect, easy repair</td>
+        </tr>
+        <tr>
+          <td>📊 Finance/Data Analyst</td>
+          <td><span class="pick-badge pick-win">ThinkPad X1 Carbon</span></td>
+          <td>৳85–1.2L</td>
+          <td>Excel advanced features, Power BI, SQL tools</td>
+        </tr>
+        <tr>
+          <td>🏢 Home Office (Desktop)</td>
+          <td><span class="pick-badge pick-mini">Mac Mini M1</span></td>
+          <td>৳55–75K</td>
+          <td>Compact, silent, powerful, use existing peripherals</td>
+        </tr>
+        <tr>
+          <td>👨‍👩‍👧 General Family Use</td>
+          <td><span class="pick-badge pick-win">Any ThinkPad/HP</span></td>
+          <td>৳30–50K</td>
+          <td>Familiar, cheaper, easier for everyone to use</td>
+        </tr>
+        <tr>
+          <td>📸 Photographer</td>
+          <td><span class="pick-badge pick-mac">MacBook Air M1/M2</span></td>
+          <td>৳80–1.1L</td>
+          <td>Lightroom/Capture One M-chip optimized, display accurate</td>
+        </tr>
+        <tr>
+          <td>🎵 Music Producer</td>
+          <td><span class="pick-badge pick-mac">MacBook Pro M1</span></td>
+          <td>৳90–1.2L</td>
+          <td>Logic Pro M1-optimized, low latency audio</td>
+        </tr>
+        <tr>
+          <td>📝 Writer/Content Creator</td>
+          <td><span class="pick-badge pick-mac">MacBook Air M1</span></td>
+          <td>৳75–90K</td>
+          <td>Battery, keyboard quality, distraction-free</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ============ COMPARISON TABLE ============ -->
+<div id="compare" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 05</div>
+    <h2 class="section-title">Head-to-Head Comparison</h2>
+    <p class="section-desc">MacBook vs Mac Mini vs Windows — সব দিক থেকে তুলনা</p>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature / Category</th>
+          <th>MacBook (M1/M2)</th>
+          <th>Mac Mini (M1/M2)</th>
+          <th>Windows Laptop</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starting Used Price (BDT)</td>
+          <td class="ct-ok">৳75,000+</td>
+          <td class="ct-best">৳55,000+</td>
+          <td class="ct-best">৳35,000+</td>
+        </tr>
+        <tr>
+          <td>Battery Life</td>
+          <td class="ct-best">15–18 hrs 🔋🔋🔋</td>
+          <td>N/A (Desktop)</td>
+          <td class="ct-ok">6–10 hrs 🔋🔋</td>
+        </tr>
+        <tr>
+          <td>Portability</td>
+          <td class="ct-best">✅ Excellent</td>
+          <td class="ct-bad">❌ Not portable</td>
+          <td class="ct-best">✅ Good</td>
+        </tr>
+        <tr>
+          <td>Raw Performance/Price</td>
+          <td class="ct-ok">Good</td>
+          <td class="ct-best">Excellent</td>
+          <td class="ct-ok">Varies widely</td>
+        </tr>
+        <tr>
+          <td>Gaming</td>
+          <td class="ct-bad">❌ Not suitable</td>
+          <td class="ct-bad">❌ Not suitable</td>
+          <td class="ct-best">✅ Best option</td>
+        </tr>
+        <tr>
+          <td>CAD / Engineering Software</td>
+          <td class="ct-ok">⚠️ Limited</td>
+          <td class="ct-ok">⚠️ Limited</td>
+          <td class="ct-best">✅ Best</td>
+        </tr>
+        <tr>
+          <td>Video Editing</td>
+          <td class="ct-best">✅ Excellent (FCP)</td>
+          <td class="ct-best">✅ Excellent</td>
+          <td class="ct-ok">Good (Premiere)</td>
+        </tr>
+        <tr>
+          <td>Software Ecosystem</td>
+          <td class="ct-ok">macOS — smaller app library</td>
+          <td class="ct-ok">macOS — smaller</td>
+          <td class="ct-best">Windows — widest</td>
+        </tr>
+        <tr>
+          <td>RAM Upgradeable?</td>
+          <td class="ct-bad">❌ No</td>
+          <td class="ct-bad">❌ No</td>
+          <td class="ct-best">✅ Most models yes</td>
+        </tr>
+        <tr>
+          <td>Repair Cost (Bangladesh)</td>
+          <td class="ct-bad">High ৳৳৳</td>
+          <td class="ct-bad">High ৳৳৳</td>
+          <td class="ct-best">Low ৳</td>
+        </tr>
+        <tr>
+          <td>Virus / Security</td>
+          <td class="ct-best">Very Safe</td>
+          <td class="ct-best">Very Safe</td>
+          <td class="ct-bad">⚠️ Need antivirus</td>
+        </tr>
+        <tr>
+          <td>Resale Value</td>
+          <td class="ct-best">High</td>
+          <td class="ct-ok">Medium</td>
+          <td class="ct-bad">Low</td>
+        </tr>
+        <tr>
+          <td>Bangladesh Govt/Bank Software</td>
+          <td class="ct-bad">⚠️ Some issues</td>
+          <td class="ct-bad">⚠️ Some issues</td>
+          <td class="ct-best">✅ Always works</td>
+        </tr>
+        <tr>
+          <td>Noise Level</td>
+          <td class="ct-best">Silent (Air)</td>
+          <td class="ct-best">Near-silent</td>
+          <td class="ct-ok">Fan noise varies</td>
+        </tr>
+        <tr>
+          <td>Build Quality (avg used)</td>
+          <td class="ct-best">Excellent</td>
+          <td class="ct-best">Excellent</td>
+          <td class="ct-ok">Varies by brand</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ============ WHERE TO BUY ============ -->
+<div id="market" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 06</div>
+    <h2 class="section-title">🇧🇩 Bangladesh-এ কোথায় কিনবেন</h2>
+    <p class="section-desc">Trusted sources, markets and platforms — with trust ratings</p>
+  </div>
+
+  <div class="market-grid">
+    <div class="market-card">
+      <div class="market-name">🏢 IDB Bhaban, Dhaka</div>
+      <span class="market-type">Physical Market</span>
+      <div class="market-note">Agargaon-এ অবস্থিত Bangladesh-এর সবচেয়ে বড় IT market। MacBook, Mac Mini, Windows সব পাওয়া যায়। দরদাম করতে পারবেন।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 4/5</div>
+    </div>
+    <div class="market-card">
+      <div class="market-name">🐘 Elephant Road</div>
+      <span class="market-type">Physical Market</span>
+      <div class="market-note">Multiplan Center area। বড় market, কিন্তু সতর্ক থাকুন — bargaining করুন, ভালোভাবে test করুন।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot"></div><div class="trust-dot"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 3/5</div>
+    </div>
+    <div class="market-card">
+      <div class="market-name">📘 Facebook Marketplace</div>
+      <span class="market-type">Online Platform</span>
+      <div class="market-note">অনেক good deal পাওয়া যায়। কিন্তু দেখে নিন, scam হওয়ার chance বেশি। বিক্রেতার profile ভালোভাবে দেখুন।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot"></div><div class="trust-dot"></div><div class="trust-dot"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 2/5 (varies)</div>
+    </div>
+    <div class="market-card">
+      <div class="market-name">🛍️ Bikroy.com</div>
+      <span class="market-type">Classifieds Website</span>
+      <div class="market-note">Bangladesh-এর Craigslist। ব্যক্তিগত বিক্রেতাদের post। Verified sellers দেখে কেনার চেষ্টা করুন।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot"></div><div class="trust-dot"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 3/5</div>
+    </div>
+    <div class="market-card">
+      <div class="market-name">🌐 Trusted FB Groups</div>
+      <span class="market-type">Community Groups</span>
+      <div class="market-note">"Used MacBook Bangladesh", "Tech Sell BD" — active community groups যেখানে genuine buyers/sellers আছে।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 4/5 (reputed groups)</div>
+    </div>
+    <div class="market-card">
+      <div class="market-name">🏪 Local Reputed Shops</div>
+      <span class="market-type">Physical Stores</span>
+      <div class="market-note">Dhaka, Chittagong-এ কিছু established refurbished shops আছে যারা warranty দেয়। একটু বেশি দাম, কিন্তু safe।</div>
+      <div class="trust-bar">
+        <div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div><div class="trust-dot filled"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Trust: 5/5 (if reputed)</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ============ SCAM AVOIDANCE ============ -->
+<div id="scams" class="container">
+  <div class="section-header">
+    <div class="section-label">Section 07</div>
+    <h2 class="section-title">⚠️ Common Scams এবং কীভাবে বাঁচবেন</h2>
+    <p class="section-desc">Bangladesh-এর used market-এ সবচেয়ে বেশি ঘটা ঠকানোর উপায়গুলো</p>
+  </div>
+
+  <div class="warning-box">
+    <strong>🚨 Scam #1 — Intel কে M1 বলে চালানো:</strong> সবচেয়ে common। About This Mac-এ নিজে check করুন। "Apple M1" বা "Apple M2" না দেখলে কিনবেন না যদি M1 বলে দাম নেওয়া হয়।
+  </div>
+  <div class="warning-box">
+    <strong>🚨 Scam #2 — Lower RAM/Storage দেওয়া:</strong> "16GB RAM" বলে 8GB দেওয়া। About This Mac বা System Settings-এ verify করুন।
+  </div>
+  <div class="warning-box">
+    <strong>🚨 Scam #3 — iCloud/Activation Lock:</strong> কারো Apple ID লক করা MacBook কিনলে আপনি কখনো ব্যবহার করতে পারবেন না। দেখা মাত্র বাতিল করুন।
+  </div>
+  <div class="warning-box">
+    <strong>🚨 Scam #4 — Repaint করা বা Housing replace করা:</strong> পুরনো body-তে ভালো model-এর sticker/logo লাগানো। Original screws দেখুন — stripped হলে আগে খোলা হয়েছে।
+  </div>
+  <div class="warning-box">
+    <strong>🚨 Scam #5 — "Dead on arrival" বলে return না নেওয়া:</strong> কেনার আগে refund policy জেনে নিন। টাকা দেওয়ার আগে সব test করুন।
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Golden Rule:</strong> কোনো deal খুব ভালো মনে হলে সন্দেহ করুন। M1 MacBook যদি ৪০,০০০ টাকায় দেখান, নিশ্চিত থাকুন কোথাও সমস্যা আছে। Used market-এ fair price জেনে সেই অনুযায়ী কেনাকাটা করুন।
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Safe Buying Tip:</strong> সম্ভব হলে IT জানা কোনো বন্ধু বা পরিচিতকে সাথে নিয়ে যান। ৫০০–১০০০ টাকা দিয়ে হলেও একজন technician-কে দিয়ে check করিয়ে নিন — ৬০–৮০ হাজার টাকার বিনিয়োগে এটা ছোট খরচ।
+  </div>
+</div>
+
+<hr class="divider heavy">
+
+<!-- ============ FINAL VERDICT ============ -->
+<div id="verdict" class="container">
+  <div class="section-header">
+    <div class="section-label">Final Verdict</div>
+    <h2 class="section-title">The Bottom Line — সহজ ভাষায় উত্তর</h2>
+    <p class="section-desc">সব কিছু বাদ দিয়ে সরাসরি point-to-point guidance</p>
+  </div>
+
+  <div class="intro-box" style="border-left-color: var(--forest);">
+    <p>🏆 <strong>Best all-around used buy in Bangladesh = MacBook Air M1 (8GB/256GB) at ৳75,000–85,000</strong> — developer, designer, student, content creator — যে কাউকে সন্তুষ্ট করতে পারবে। Battery অতুলনীয়, performance চমৎকার, ৫ বছর পরেও কাজে আসবে।</p>
+    <p>💰 <strong>Tightest budget = ThinkPad T14 বা Dell Latitude at ৳40,000–55,000</strong> — 16GB RAM + SSD নিশ্চিত করুন। Office, coding, student সব কাজে reliable।</p>
+    <p>🖥️ <strong>Desktop setups-এর জন্য = Mac Mini M1 at ৳55,000–70,000</strong> — সবচেয়ে কম টাকায় Apple Silicon। নিজের monitor আছে? এটাই নিন।</p>
+    <p>🎮 <strong>Gaming বা CAD = Windows লাগবেই</strong> — কোনো shortcut নেই। RTX GPU সহ Asus TUF বা Dell Precision নিন।</p>
+    <p>⚠️ <strong>যা avoid করবেন:</strong> Intel MacBook (2018–2020), যেকোনো 4GB RAM laptop, HDD-only laptop, এবং Facebook-এ বেশি সস্তা কোনো deal।</p>
+  </div>
+
+  <div class="spacer-lg"></div>
+</div>
+
+<!-- FOOTER -->
+<div class="guide-footer">
+  <div style="font-size:20px;margin-bottom:12px">🇧🇩</div>
+  <strong>Used Computer Buying Guide — Bangladesh 2025</strong><br>
+  দাম পরিবর্তনশীল — কেনার আগে current market rate যাচাই করুন।<br>
+  সব feedback এবং তথ্য Bangladesh market-এর real experience থেকে সংগ্রহ করা।<br><br>
+  <span style="font-size:11px;opacity:0.5">Crafted for non-IT buyers navigating Bangladesh's used computer market · Prices approximate for 2025 · Always verify before purchase</span>
+</div>
+
+</body>
+</html>
